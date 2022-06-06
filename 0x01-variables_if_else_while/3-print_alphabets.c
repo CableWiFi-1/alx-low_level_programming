@@ -1,34 +1,29 @@
 #include <stdio.h>
 
 /**
- *main - entry point
- *Description: random number in n +ve/-ve
- *Return: Always 0 (success)
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 
 {
 
-int firstSLetter, firstCletter, n;
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-for (firstSLetter = 97, n = 1; n < 27; firstSLetter++, n++)
+int i;
 
-{
-
-putchar(firstSLetter);
-
-}
-
-for (firstClettar = 65, n = 1; n < 27; firstCletter++, n++)
+for (i = 0; i < 52; i++)
 
 {
 
-putchar(firstCletter);
+putchar(alp[i]);
 
 }
 
-putchar(10)
+putchar('\n');
 
-return (0)
+return (0);
+
 }
