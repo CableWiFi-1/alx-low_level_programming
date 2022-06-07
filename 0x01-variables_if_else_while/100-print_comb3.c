@@ -1,35 +1,36 @@
 #include <stdio.h>
+
 /**
- *main - entry point
- *Description: random number in n +ve/-ve
+ *main - Prints numbers between 00 to 89.
+ *
  *Return: 0 on success
  */
 int main(void)
 {
-int n, k = '0', m;
-for (n = '0'; n < '9'; n++)
+int i, e;
+
+i = 48;
+e = 48;
+
+while (e < 58)
 {
-for (m = k ; m <= '9'; m++)
-if (n != m)
+i = 48;
+while (i < 58)
 {
-putchar(n);
-putchar(m);
-}
-if (n == m)
+if (e != i && e < i)
 {
-continue;
-}
-if (n == '8' && m == '9')
+putchar(e);
+putchar(i);
+if (i == 57 && e == 56)
 {
 break;
 }
-else
-{
 putchar(',');
 putchar(' ');
 }
+i++;
 }
-k++;
+e++;
 }
 putchar('\n');
 return (0);
