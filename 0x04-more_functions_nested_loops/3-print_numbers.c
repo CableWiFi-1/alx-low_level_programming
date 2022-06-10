@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - Prints 0 to 9
- *
- * Return: The numbers 0 - 9
+ * print_numbers - prints numbers between 0 to 9.
+ * Return: no return.
  */
 void print_numbers(void)
 {
-char n = 0;
+	int ch;
 
-while (n <= 9)
-{
-_putchar('0' + n);
-n++;
-
-}
-_putchar('\n');
+	for (ch = 48; ch < 58; ch++)
+	{
+		_putchar(ch);
+	}
+	_putchar('\n');
 }
